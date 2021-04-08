@@ -1,1 +1,5 @@
 node_modules
+git add .
+git commit -m "initial commit"
+heroku create
+git push heroku master
