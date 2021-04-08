@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Header, Container, Divider, Icon } from 'semantic-ui-react';
 
-import './layout.css';
+import './Layout.css';
 
 const Layout = ({ children }) => {
   return (
