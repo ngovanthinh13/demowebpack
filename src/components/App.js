@@ -1,9 +1,12 @@
 import React from 'react'
+import {useState} from 'react'
 import {
     Switch, BrowserRouter as Router, Route
 } from 'react-router-dom';
 import Home from './Home';
 import DynamicPage from './DynamicPage';
+import Login from '../pages/login';
+import Profile from '../pages/profile'
 import NoMatch from './NoMatch';
 function App() {
     return (
@@ -12,6 +15,8 @@ function App() {
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route exact path="/dynamic" component={DynamicPage} />
+                    <Route exact path="/login" component={Login} />
+                    <Route exact path="/profile" component={Profile} />
                     <Route component={NoMatch} />
                 </Switch>
             </div>
